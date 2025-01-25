@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 import story, {type Scenario} from "@/game/Story.ts";
 import Decision from "@/components/Decision.vue";
 import {ref} from "vue";
