@@ -1,18 +1,20 @@
-interface Choice {
+export interface Choice {
     id: string;
     text: string;
     consequence: string;
     nextScenario?: number;
 }
 
-interface Scenario {
+export interface Scenario {
     id: number;
     title: string;
     description: string;
     choices: Choice[];
 }
 
-const story: { title: string; description: string; scenarios: Scenario[] } = {
+export interface Story { title: string; description: string; scenarios: Scenario[] }
+
+export const story: Story = {
     title: "Das verlorene Paket",
     description: "Du bist Alex, ein Lieferfahrer, der ein wertvolles Paket findet. Deine Entscheidungen beeinflussen deinen Weg: Criminal Thinking oder Critical Thinking.",
     scenarios: [
