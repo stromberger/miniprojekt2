@@ -38,7 +38,7 @@ function changeScenario(newScenarioId?: number) {
       <Decision v-if="!isDone && !isInitial" :scenario="currentScenario" @click="changeScenario"/>
       <div v-if="isDone && !isInitial">
         <h1 class="text-2xl pb-4 text-slate-800">The End</h1>
-        <p class="pb-4 text-slate-700">Du hast das Ende vom Spiel erreicht! Möchtest du noch einmal von vorne Anfangen, um andere Möglichkeiten zu erkunden?</p>
+        <p class="pb-4 text-slate-700">Du hast das Ende vom Spiel erreicht! Möchtest du noch einmal von vorne anfangen, um andere Möglichkeiten zu erkunden?</p>
         <button class="cursor-pointer mb-2 p-4 w-full border transition-colors duration-100 ease-in-out hover:bg-blue-700 hover:text-white"
         @click="() => {
           isDone = false;
